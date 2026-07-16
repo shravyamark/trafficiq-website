@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#ffffff">
   <meta name="description" content="TrafficIQ Solutions turns roadway video into trusted autonomous-vehicle observations, multimodal trajectories, and decision-ready traffic analytics.">
   <title>TrafficIQ Solutions | Trusted AI for Smarter Streets</title>
   <script>document.documentElement.classList.add("js");</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="app.js"></script>
 </head>
@@ -18,21 +21,13 @@
   <header class="site-header" data-header>
     <div class="container nav-shell">
       <a class="brand" href="#home" aria-label="TrafficIQ Solutions home">
-        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-hidden="true">
-          <defs>
-            <linearGradient id="brand-gradient" x1="7" y1="5" x2="42" y2="43" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#69F3FF"/>
-              <stop offset="0.55" stop-color="#36D8C0"/>
-              <stop offset="1" stop-color="#8D7CFF"/>
-            </linearGradient>
-          </defs>
-          <rect x="2" y="2" width="44" height="44" rx="14" fill="#0D1B2E" stroke="url(#brand-gradient)" stroke-width="1.5"/>
-          <path d="M11 18h26M11 30h17M18 11v26M30 11v15" stroke="url(#brand-gradient)" stroke-width="3.2" stroke-linecap="round"/>
-          <circle cx="32.5" cy="31.5" r="5.5" fill="#07111F" stroke="#69F3FF" stroke-width="2.5"/>
-          <path d="m36.3 35.3 3.1 3.1" stroke="#69F3FF" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
-        <span class="brand-type">Traffic<span>IQ</span></span>
-        <span class="brand-suffix">Solutions</span>
+        <span class="brand-lockup" aria-hidden="true">
+          <span class="brand-wordmark">traffic<span>iq</span></span>
+          <span class="brand-subline">
+            <span class="brand-road" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="brand-company">Solutions, PLLC</span>
+          </span>
+        </span>
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
@@ -44,7 +39,8 @@
         <a href="#capabilities">Capabilities</a>
         <a href="#security">Security</a>
         <a href="#about">About</a>
-        <a class="nav-cta" href="#contact">Start a conversation</a>
+        <a href="waymo_action_recognition_demo.html">Demo</a>
+        <a class="nav-cta" href="mailto:smarkandeya@trafficiqsolutions.com?subject=TrafficIQ%20Solutions%20Inquiry">Start a conversation</a>
       </nav>
     </div>
   </header>
@@ -59,11 +55,11 @@
           <h1>See every movement.<br><span>Understand what matters.</span></h1>
           <p class="hero-lede">TrafficIQ converts roadway video into verified autonomous-vehicle observations, multimodal trajectories, and decision-ready analytics—inside a privacy-preserving confidential-cloud architecture.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#platform">
-              Explore AVSense
+            <a class="button button-primary" href="waymo_action_recognition_demo.html">
+              Launch the demo
               <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
             </a>
-            <a class="button button-secondary" href="#architecture">View the architecture</a>
+            <a class="button button-secondary" href="#platform">Explore AVSense</a>
           </div>
           <div class="hero-proof" aria-label="Platform attributes">
             <div><strong>Cloud-first</strong><span>Low field hardware</span></div>
@@ -87,13 +83,13 @@
               <desc id="traffic-map-desc">An animated illustration of vehicles and pedestrians moving through an intersection while TrafficIQ produces detections, trajectories, and events.</desc>
               <defs>
                 <linearGradient id="road-glow" x1="85" y1="60" x2="630" y2="470" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#12233A"/>
-                  <stop offset="1" stop-color="#0B1728"/>
+                  <stop stop-color="#243247"/>
+                  <stop offset="1" stop-color="#152033"/>
                 </linearGradient>
                 <linearGradient id="trace-gradient" x1="0" y1="0" x2="1" y2="0">
-                  <stop stop-color="#6AF2FF" stop-opacity="0"/>
-                  <stop offset="0.5" stop-color="#6AF2FF"/>
-                  <stop offset="1" stop-color="#8C7AFF" stop-opacity="0"/>
+                  <stop stop-color="#1F6FEB" stop-opacity="0"/>
+                  <stop offset="0.5" stop-color="#1F6FEB"/>
+                  <stop offset="1" stop-color="#5A6472" stop-opacity="0"/>
                 </linearGradient>
                 <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%">
                   <feGaussianBlur stdDeviation="6" result="blur"/>
@@ -111,7 +107,7 @@
 
               <rect x="0" y="152" width="720" height="220" rx="18" fill="url(#road-glow)"/>
               <rect x="156" y="0" width="250" height="520" rx="18" fill="url(#road-glow)"/>
-              <rect x="156" y="152" width="250" height="220" fill="#102039"/>
+              <rect x="156" y="152" width="250" height="220" fill="#1B2B42"/>
 
               <g class="lane-lines">
                 <path d="M0 261H156M406 261H720"/>
@@ -143,22 +139,22 @@
               </g>
 
               <g class="moving-object object-av" filter="url(#soft-glow)">
-                <circle r="9" fill="#69F3FF"/>
-                <circle r="16" fill="none" stroke="#69F3FF" stroke-opacity="0.35"/>
+                <circle r="9" fill="#1F6FEB"/>
+                <circle r="16" fill="none" stroke="#1F6FEB" stroke-opacity="0.35"/>
                 <animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
                   <mpath href="#route-av"/>
                 </animateMotion>
               </g>
 
               <g class="moving-object object-car">
-                <circle r="7" fill="#8D7CFF"/>
+                <circle r="7" fill="#5A6472"/>
                 <animateMotion dur="7s" begin="-3.2s" repeatCount="indefinite" rotate="auto">
                   <mpath href="#route-car"/>
                 </animateMotion>
               </g>
 
               <g class="moving-object object-bike">
-                <circle r="6" fill="#38D8BD"/>
+                <circle r="6" fill="#78A8FF"/>
                 <animateMotion dur="9s" begin="-4.6s" repeatCount="indefinite" rotate="auto">
                   <mpath href="#route-bike"/>
                 </animateMotion>
@@ -453,7 +449,7 @@
           <h2>Transportation-first AI, engineered for real streets.</h2>
           <p>TrafficIQ Solutions, PLLC brings traffic engineering, intelligent transportation systems, computer vision, explainable AI, cryptography, and data governance into one deployment-focused team.</p>
           <p>We build practical systems that help agencies observe emerging mobility, evaluate behavior, protect sensitive data, and make decisions that can stand up to technical and public scrutiny.</p>
-          <a class="text-link" href="#contact">Discuss a pilot <span>→</span></a>
+          <a class="text-link" href="mailto:smarkandeya@trafficiqsolutions.com?subject=TrafficIQ%20Solutions%20Inquiry">Discuss a pilot <span>→</span></a>
         </div>
       </div>
     </section>
@@ -463,36 +459,20 @@
         <div class="contact-copy">
           <div class="eyebrow"><span class="eyebrow-dot"></span> Start a conversation</div>
           <h2>Turn roadway video into trusted intelligence.</h2>
-          <p>Tell us about your corridor, pilot, or research program. This starter form is ready to connect to your email, CRM, or website backend.</p>
+          <p>Tell us about your corridor, pilot, or research program. Contact TrafficIQ directly or explore the autonomous-vehicle action-recognition demo.</p>
           <div class="contact-points">
             <span>AV observation</span><span>Traffic analytics</span><span>Privacy-preserving AI</span>
           </div>
         </div>
 
-        <form class="contact-form" data-contact-form>
-          <div class="field-row">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
-            </label>
-            <label>
-              <span>Work email</span>
-              <input type="email" name="email" autocomplete="email" placeholder="name@organization.com" required>
-            </label>
+        <div class="contact-form contact-cta" aria-label="Contact TrafficIQ Solutions">
+          <div>
+            <span class="contact-cta-label">Email TrafficIQ Solutions</span>
+            <a class="contact-email" href="mailto:smarkandeya@trafficiqsolutions.com">smarkandeya@trafficiqsolutions.com</a>
           </div>
-          <label>
-            <span>Organization</span>
-            <input type="text" name="organization" autocomplete="organization" placeholder="Agency, university, or company">
-          </label>
-          <label>
-            <span>What are you working on?</span>
-            <textarea name="message" rows="4" placeholder="Briefly describe your site, use case, or pilot." required></textarea>
-          </label>
-          <div class="form-footer">
-            <button class="button button-primary" type="submit">Send inquiry <span>→</span></button>
-            <p data-form-status aria-live="polite">Demo form · connect your preferred endpoint before launch</p>
-          </div>
-        </form>
+          <a class="button button-primary" href="mailto:smarkandeya@trafficiqsolutions.com?subject=TrafficIQ%20Solutions%20Inquiry">Send inquiry <span>→</span></a>
+          <a class="button button-secondary" href="waymo_action_recognition_demo.html">View action-recognition demo</a>
+        </div>
       </div>
     </section>
   </main>
@@ -501,14 +481,13 @@
     <div class="container footer-grid">
       <div>
         <a class="brand footer-brand" href="#home" aria-label="TrafficIQ Solutions home">
-          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
-            <rect x="2" y="2" width="44" height="44" rx="14" fill="#0D1B2E" stroke="#69F3FF" stroke-width="1.5"/>
-            <path d="M11 18h26M11 30h17M18 11v26M30 11v15" stroke="#69F3FF" stroke-width="3.2" stroke-linecap="round"/>
-            <circle cx="32.5" cy="31.5" r="5.5" fill="#07111F" stroke="#69F3FF" stroke-width="2.5"/>
-            <path d="m36.3 35.3 3.1 3.1" stroke="#69F3FF" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-          <span class="brand-type">Traffic<span>IQ</span></span>
-          <span class="brand-suffix">Solutions</span>
+          <span class="brand-lockup" aria-hidden="true">
+            <span class="brand-wordmark">traffic<span>iq</span></span>
+            <span class="brand-subline">
+              <span class="brand-road" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="brand-company">Solutions, PLLC</span>
+            </span>
+        </span>
         </a>
         <p>Trusted AI for safer, smarter streets.</p>
       </div>
