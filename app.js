@@ -5,8 +5,6 @@
   const navToggle = document.querySelector('[data-nav-toggle]');
   const nav = document.querySelector('[data-nav]');
   const navLinks = nav ? [...nav.querySelectorAll('a')] : [];
-  const form = document.querySelector('[data-contact-form]');
-  const formStatus = document.querySelector('[data-form-status]');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const setHeaderState = () => {
@@ -96,29 +94,6 @@
     }
   }
 
-  if (form && formStatus) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const button = form.querySelector('button[type="submit"]');
-      const originalLabel = button ? button.innerHTML : '';
-
-      if (button) {
-        button.disabled = true;
-        button.textContent = 'Message captured';
-      }
-
-      formStatus.textContent = 'Demo submission received — connect this form to your preferred endpoint before launch.';
-      formStatus.classList.add('is-success');
-
-      window.setTimeout(() => {
-        form.reset();
-        if (button) {
-          button.disabled = false;
-          button.innerHTML = originalLabel;
-        }
-      }, 1400);
-    });
-  }
 
   };
 
