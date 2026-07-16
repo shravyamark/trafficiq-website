@@ -1,23 +1,28 @@
 :root {
-  --ink-950: #050b14;
-  --ink-900: #07111f;
-  --ink-850: #0a1627;
-  --ink-800: #0d1b2e;
-  --ink-700: #14243a;
-  --slate-600: #526176;
+  --ink-950: #0a0f18;
+  --ink-900: #101827;
+  --ink-850: #152033;
+  --ink-800: #1b2738;
+  --ink-700: #263548;
+  --slate-600: #5a6472;
   --slate-500: #718096;
   --slate-400: #96a3b5;
-  --slate-300: #bcc6d2;
-  --paper: #f4f7f8;
+  --slate-300: #c9d1db;
+  --paper: #f6f8fb;
   --white: #ffffff;
-  --cyan: #69f3ff;
-  --cyan-strong: #21dff0;
-  --teal: #38d8bd;
-  --violet: #8d7cff;
-  --lime: #b8ff73;
+  --cyan: #1f6feb;
+  --cyan-strong: #4d8bff;
+  --teal: #78a8ff;
+  --violet: #5a6472;
+  --lime: #dce9ff;
+  --brand-charcoal: #2e3440;
+  --brand-blue: #1f6feb;
+  --brand-slate: #5a6472;
+  --brand-mist: #c9d1db;
+  --brand-pale: #eaf1ff;
   --line-dark: rgba(255, 255, 255, 0.1);
-  --line-light: rgba(7, 17, 31, 0.12);
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+  --line-light: rgba(46, 52, 64, 0.12);
+  --shadow: 0 24px 80px rgba(10, 15, 24, 0.22);
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 30px;
@@ -39,7 +44,7 @@ body {
   min-width: 320px;
   background: var(--ink-900);
   color: var(--white);
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Space Grotesk", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -350,7 +355,7 @@ h3 {
 }
 
 .hero h1 span {
-  background: linear-gradient(92deg, var(--cyan) 4%, var(--teal) 47%, #ae9eff 92%);
+  background: linear-gradient(92deg, var(--cyan) 4%, var(--teal) 47%, #8db7ff 92%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -401,7 +406,7 @@ h3 {
 }
 
 .button-primary {
-  background: linear-gradient(110deg, var(--cyan), #4edbd3 66%, #83f2c7);
+  background: linear-gradient(110deg, var(--cyan), #6d9ff7 66%, #a8c6ff);
   color: var(--ink-950);
   box-shadow: 0 12px 34px rgba(62, 222, 221, 0.22);
 }
@@ -439,7 +444,7 @@ h3 {
 }
 
 .hero-proof strong {
-  color: #eef4f8;
+  color: #f4f7fb;
   font-size: 12px;
   font-weight: 760;
   letter-spacing: 0.02em;
@@ -515,7 +520,7 @@ h3 {
   border: 1px solid rgba(56, 216, 189, 0.2);
   border-radius: 999px;
   padding: 7px 10px;
-  color: #b9f5e8;
+  color: #dce9ff;
   background: rgba(56, 216, 189, 0.06);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 9px;
@@ -537,7 +542,7 @@ h3 {
   min-height: 456px;
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 20px;
-  background: #07111e;
+  background: #101827;
 }
 
 .traffic-viewport::after {
@@ -599,11 +604,11 @@ h3 {
 }
 
 .trajectory-one {
-  stroke: #69f3ff;
+  stroke: #1f6feb;
 }
 
 .trajectory-two {
-  stroke: #8d7cff;
+  stroke: #5a6472;
   animation-direction: reverse;
 }
 
@@ -616,14 +621,14 @@ h3 {
 
 .detection-pulse path {
   fill: none;
-  stroke: #69f3ff;
+  stroke: #1f6feb;
   stroke-width: 1.8;
   stroke-linecap: round;
 }
 
 .pedestrian-cluster {
-  fill: #38d8bd;
-  stroke: #38d8bd;
+  fill: #78a8ff;
+  stroke: #78a8ff;
   stroke-linecap: round;
   opacity: 0.8;
 }
@@ -695,7 +700,7 @@ h3 {
 }
 
 .metric-chip strong {
-  color: #edf8fb;
+  color: #f3f7ff;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 11px;
   font-weight: 650;
@@ -728,7 +733,7 @@ h3 {
   border: 1px solid rgba(56, 216, 189, 0.2);
   border-radius: 999px;
   padding: 5px 8px;
-  color: #9be8d9;
+  color: #8db7ff;
 }
 
 .signal-row {
@@ -831,7 +836,7 @@ h3 {
 .feature-card-large {
   background:
     radial-gradient(circle at 86% 18%, rgba(105, 243, 255, 0.38), transparent 26%),
-    linear-gradient(150deg, #071420, #0d2434 70%, #153547);
+    linear-gradient(150deg, #0f1a2a, #152438 70%, #1d3554);
   color: var(--white);
   border-color: rgba(105, 243, 255, 0.18);
 }
@@ -875,7 +880,7 @@ h3 {
 .feature-icon svg {
   width: 28px;
   fill: none;
-  stroke: #087e90;
+  stroke: #205eb9;
   stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -937,7 +942,7 @@ h3 {
 .architecture-section {
   background:
     radial-gradient(circle at 50% 45%, rgba(56, 216, 189, 0.07), transparent 35%),
-    linear-gradient(180deg, var(--ink-900), #06101d);
+    linear-gradient(180deg, var(--ink-900), #0a0f18);
 }
 
 .architecture-flow {
@@ -1163,7 +1168,7 @@ h3 {
 }
 
 .architecture-note strong {
-  color: #dffcff;
+  color: #edf4ff;
 }
 
 .note-pulse {
@@ -1201,14 +1206,14 @@ h3 {
 }
 
 .capability-card-gradient {
-  background: linear-gradient(145deg, #0b1a2c, #0c2834 66%, #124150);
+  background: linear-gradient(145deg, #142238, #16263a 66%, #1e3d68);
   color: var(--white);
   border-color: rgba(105, 243, 255, 0.17);
 }
 
 .capability-kicker {
   margin-bottom: 30px;
-  color: #168c99;
+  color: #286bc8;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.15em;
@@ -1234,7 +1239,7 @@ h3 {
 }
 
 .capability-card-gradient p {
-  color: #9fb1c0;
+  color: #96a3b5;
 }
 
 .capability-visual,
@@ -1286,7 +1291,7 @@ h3 {
   left: 38%;
   width: 50px;
   height: 42px;
-  border: 1px solid #12a0ae;
+  border: 1px solid #2d74dc;
   border-radius: 8px;
 }
 
@@ -1296,7 +1301,7 @@ h3 {
   position: absolute;
   width: 9px;
   height: 9px;
-  border-color: #12a0ae;
+  border-color: #2d74dc;
 }
 
 .visual-detect i::before {
@@ -1334,7 +1339,7 @@ h3 {
 
 .class-chips span:first-child {
   border-color: rgba(18, 160, 174, 0.32);
-  color: #087e90;
+  color: #205eb9;
   background: rgba(105, 243, 255, 0.14);
 }
 
@@ -1369,14 +1374,14 @@ h3 {
 
 .trajectory-card path {
   fill: none;
-  stroke: #16a6b6;
+  stroke: #2d74dc;
   stroke-width: 2;
   stroke-dasharray: 5 5;
 }
 
 .trajectory-card circle {
   fill: var(--paper);
-  stroke: #16a6b6;
+  stroke: #2d74dc;
   stroke-width: 2;
 }
 
@@ -1397,7 +1402,7 @@ h3 {
   height: 12px;
   border: 2px solid var(--cyan);
   border-radius: 50%;
-  background: #0b2433;
+  background: #152438;
   box-shadow: 0 0 14px rgba(105, 243, 255, 0.35);
 }
 
@@ -1421,7 +1426,7 @@ h3 {
 .security-section {
   background:
     radial-gradient(circle at 72% 42%, rgba(105, 243, 255, 0.09), transparent 30%),
-    linear-gradient(155deg, #050b14, #071522 54%, #081a28);
+    linear-gradient(155deg, #050b14, #101b2b 54%, #111e30);
 }
 
 .security-glow {
@@ -1465,7 +1470,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 11px;
-  color: #c2ccda;
+  color: #c9d1db;
   font-size: 13px;
 }
 
@@ -1537,7 +1542,7 @@ h3 {
 }
 
 .boundary-header strong {
-  color: #a8ecdf;
+  color: #c5d9ff;
   font-weight: 600;
 }
 
@@ -1640,7 +1645,7 @@ h3 {
 
 .boundary-modules strong {
   margin-bottom: 2px;
-  color: #d9f8fb;
+  color: #eaf1ff;
   font-size: 11px;
 }
 
@@ -1694,7 +1699,7 @@ h3 {
 .use-case > span {
   display: block;
   margin-bottom: 55px;
-  color: #198c98;
+  color: #286bc8;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 9px;
 }
@@ -1713,7 +1718,7 @@ h3 {
 }
 
 .about-section {
-  background: linear-gradient(160deg, #07111f, #091827);
+  background: linear-gradient(160deg, #07111f, #121f32);
 }
 
 .about-grid {
@@ -1768,7 +1773,7 @@ h3 {
 .about-center strong {
   position: absolute;
   bottom: 25px;
-  color: #c5f9fb;
+  color: #dce9ff;
   font-size: 11px;
   letter-spacing: 0.06em;
 }
@@ -1852,7 +1857,7 @@ h3 {
   padding: 64px;
   background:
     radial-gradient(circle at 12% 14%, rgba(105, 243, 255, 0.13), transparent 26%),
-    linear-gradient(145deg, #07111f, #0b1c2e 74%, #0e2c3c);
+    linear-gradient(145deg, #07111f, #15243a 74%, #17273b);
   color: var(--white);
   box-shadow: 0 30px 90px rgba(7, 17, 31, 0.18);
 }
@@ -1895,7 +1900,7 @@ h3 {
   border: 1px solid rgba(105, 243, 255, 0.15);
   border-radius: 999px;
   padding: 7px 10px;
-  color: #91a7b8;
+  color: #8e9cad;
   background: rgba(105, 243, 255, 0.035);
   font-size: 9px;
   letter-spacing: 0.07em;
@@ -1972,7 +1977,7 @@ h3 {
 }
 
 .form-footer p.is-success {
-  color: #9ee8da;
+  color: #8db7ff;
 }
 
 .site-footer {
@@ -2446,3 +2451,219 @@ h3 {
     transform: none;
   }
 }
+
+
+/* Supplied TrafficIQ logo lockup and color-system integration */
+.site-header {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: rgba(201, 209, 219, 0.82);
+  box-shadow: 0 8px 30px rgba(46, 52, 64, 0.06);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.site-header.is-scrolled {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(201, 209, 219, 0.95);
+  box-shadow: 0 14px 42px rgba(46, 52, 64, 0.12);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  color: var(--brand-charcoal);
+}
+
+.brand-lockup {
+  display: inline-flex;
+  flex-direction: column;
+  width: max-content;
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+}
+
+.brand-wordmark {
+  display: block;
+  color: var(--brand-charcoal);
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  text-transform: lowercase;
+}
+
+.brand-wordmark > span {
+  color: var(--brand-blue);
+}
+
+.brand-subline {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 6px;
+}
+
+.brand-road {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 4px;
+}
+
+.brand-road i {
+  display: block;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--brand-blue);
+}
+
+.brand-road i:nth-child(1) { width: 17px; }
+.brand-road i:nth-child(2) { width: 8px; background: var(--brand-mist); }
+.brand-road i:nth-child(3) { width: 28px; }
+.brand-road i:nth-child(4) { width: 6px; background: var(--brand-mist); }
+.brand-road i:nth-child(5) { width: 12px; }
+
+.brand-company {
+  color: var(--brand-slate);
+  font-size: 7.5px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.primary-nav a {
+  color: var(--brand-slate);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible {
+  color: var(--brand-charcoal);
+}
+
+.nav-cta {
+  border-color: var(--brand-blue);
+  color: var(--white) !important;
+  background: var(--brand-blue);
+  box-shadow: 0 10px 26px rgba(31, 111, 235, 0.22);
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  border-color: #185bc4;
+  color: var(--white) !important;
+  background: #185bc4;
+}
+
+.nav-toggle {
+  border-color: rgba(46, 52, 64, 0.16);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.nav-toggle span {
+  background: var(--brand-charcoal);
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 14% 24%, rgba(31, 111, 235, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 16%, rgba(90, 100, 114, 0.16), transparent 31%),
+    linear-gradient(180deg, #0a0f18 0%, #101827 58%, #152033 100%);
+}
+
+.hero h1 span {
+  background: linear-gradient(92deg, #4d8bff 4%, #78a8ff 52%, #dce9ff 96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.button-primary {
+  box-shadow: 0 18px 42px rgba(31, 111, 235, 0.24);
+}
+
+.site-footer {
+  background: #ffffff;
+  border-top-color: var(--brand-mist);
+}
+
+.footer-brand {
+  margin-bottom: 17px;
+}
+
+.footer-brand .brand-wordmark {
+  font-size: 38px;
+}
+
+.footer-brand .brand-company {
+  font-size: 8.8px;
+}
+
+.footer-brand .brand-road i { height: 5px; }
+.footer-brand .brand-road { height: 5px; gap: 4px; }
+.footer-brand .brand-road i:nth-child(1) { width: 22px; }
+.footer-brand .brand-road i:nth-child(2) { width: 10px; }
+.footer-brand .brand-road i:nth-child(3) { width: 36px; }
+.footer-brand .brand-road i:nth-child(4) { width: 8px; }
+.footer-brand .brand-road i:nth-child(5) { width: 15px; }
+
+.footer-grid > div:first-child > p,
+.footer-grid nav a,
+.footer-meta p {
+  color: var(--brand-slate);
+}
+
+.footer-grid nav a:hover,
+.footer-grid nav a:focus-visible {
+  color: var(--brand-blue);
+}
+
+@media (max-width: 900px) {
+  .primary-nav {
+    background: rgba(255, 255, 255, 0.985);
+  }
+
+  .primary-nav a {
+    color: var(--brand-charcoal);
+    border-bottom-color: rgba(201, 209, 219, 0.72);
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-subline {
+    display: none;
+  }
+
+  .brand-wordmark {
+    font-size: 29px;
+    line-height: 1;
+  }
+
+  .footer-brand .brand-subline {
+    display: flex;
+  }
+}
+
+/* Direct contact CTA */
+.contact-cta {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+}
+.contact-cta-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--slate, #5A6472);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.contact-email {
+  color: var(--charcoal, #2E3440);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.contact-email:hover { color: var(--blue, #1F6FEB); }
