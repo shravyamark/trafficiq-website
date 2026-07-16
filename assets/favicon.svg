@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="g" x1="8" y1="6" x2="56" y2="58"><stop stop-color="#69F3FF"/><stop offset=".55" stop-color="#38D8BD"/><stop offset="1" stop-color="#8D7CFF"/></linearGradient></defs>
-  <rect width="64" height="64" rx="18" fill="#07111F"/>
-  <path d="M14 23h36M14 40h23M23 14v36M40 14v20" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="43" cy="42" r="8" fill="#07111F" stroke="#69F3FF" stroke-width="4"/>
-  <path d="m49 48 5 5" stroke="#69F3FF" stroke-width="4" stroke-linecap="round"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="17" fill="#FFFFFF" stroke="#C9D1DB" stroke-width="3"/>
+  <text x="9" y="38" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="-2" fill="#2E3440">t</text>
+  <text x="24" y="38" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="-2" fill="#1F6FEB">iq</text>
+  <rect x="10" y="47" width="17" height="4" rx="2" fill="#1F6FEB"/>
+  <rect x="30" y="47" width="8" height="4" rx="2" fill="#C9D1DB"/>
+  <rect x="41" y="47" width="13" height="4" rx="2" fill="#1F6FEB"/>
 </svg>
